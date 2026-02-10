@@ -44,38 +44,41 @@ The project emphasizes:
 
 ## Project Structure
 QUESTION-SHEET
-│
+├── node_modules/
 ├── public/
-│ └── data/
-│ └── sheet.json # Questions and topics data
-│
+│   ├── data/
+│   │   └── sheet.json
+│   └── vite.svg
 ├── src/
-│ ├── api/
-│ │ └── sheetApi.js # Data access logic
-│ │
-│ ├── assets/ # Images and icons
-│ │
-│ ├── components/
-│ │ ├── ui/
-│ │ │ ├── Badge.jsx
-│ │ │ ├── ProblemItem.jsx
-│ │ │ └── ProgressBar.jsx
-│ │ │
-│ │ ├── SectionCard.jsx
-│ │ ├── QuestionCard.jsx
-│ │ └── Topic.jsx
-│ │
-│ ├── store/
-│ │ └── useSheetStore.js # Zustand store
-│ │
-│ ├── App.jsx
-│ ├── main.jsx
-│ └── index.css
-│
+│   ├── api/
+│   │   └── sheetApi.js
+│   ├── assets/
+│   │   ├── leetcode.png
+│   │   └── react.svg
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── Badge.jsx
+│   │   │   ├── ProblemItem.jsx
+│   │   │   └── ProgressBar.jsx
+│   │   ├── SectionCard.jsx
+│   │   ├── QuestionCard.jsx
+│   │   └── Topic.jsx
+│   ├── store/
+│   │   └── useSheetStore.js
+│   ├── api.js
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
 ├── package.json
+├── postcss.config.js
+├── README.md
 ├── tailwind.config.js
-├── vite.config.js
-└── README.md
+└── vite.config.js
 
 
 ---
