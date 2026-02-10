@@ -44,49 +44,38 @@ The project emphasizes:
 
 ## Project Structure
 QUESTION-SHEET
-│── node_modules/              # Installed dependencies
 │
-│── public/                    # Public assets
-│   ├── data/
-│   │   └── sheet.json         # Questions & topics data
-│   └── vite.svg
+├── public/
+│ └── data/
+│ └── sheet.json # Questions and topics data
 │
-│── src/
-│   ├── api/
-│   │   └── sheetApi.js        # Data fetching logic
+├── src/
+│ ├── api/
+│ │ └── sheetApi.js # Data access logic
+│ │
+│ ├── assets/ # Images and icons
+│ │
+│ ├── components/
+│ │ ├── ui/
+│ │ │ ├── Badge.jsx
+│ │ │ ├── ProblemItem.jsx
+│ │ │ └── ProgressBar.jsx
+│ │ │
+│ │ ├── SectionCard.jsx
+│ │ ├── QuestionCard.jsx
+│ │ └── Topic.jsx
+│ │
+│ ├── store/
+│ │ └── useSheetStore.js # Zustand store
+│ │
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── index.css
 │
-│   ├── assets/                # Images & icons
-│   │   ├── leetcode.png
-│   │   └── react.svg
-│
-│   ├── components/
-│   │   ├── ui/                # Reusable UI components
-│   │   │   ├── Badge.jsx
-│   │   │   ├── ProblemItem.jsx
-│   │   │   └── ProgressBar.jsx
-│   │   │
-│   │   ├── SectionCard.jsx    # Topic container card
-│   │   ├── QuestionCard.jsx   # Individual question card
-│   │   └── Topic.jsx          # Topic with dropdown
-│
-│   ├── store/
-│   │   └── useSheetStore.js   # Zustand global store
-│
-│   ├── api.js                 # API abstraction
-│   ├── App.jsx                # Root component
-│   ├── main.jsx               # App entry point
-│   ├── index.css              # Global styles
-│   └── App.css
-│
-│── .gitignore
-│── eslint.config.js
-│── index.html
-│── package.json
-│── package-lock.json
-│── postcss.config.js
-│── tailwind.config.js
-│── vite.config.js
-│── README.md
+├── package.json
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
 
 
 ---
