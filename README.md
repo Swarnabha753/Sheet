@@ -1,17 +1,105 @@
-# React + Vite
+# Question Sheet – Topic-Wise Coding Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight web application to organize, track, and monitor coding practice in a structured, topic-wise manner.  
+Designed to help students and internship candidates prepare efficiently for DSA and technical interviews.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## React Compiler
+Question Sheet is a frontend-focused project that allows users to browse coding questions grouped by topics such as Arrays, Strings, etc.  
+Each topic can be expanded to reveal its questions, along with difficulty indicators and progress tracking.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The project emphasizes:
+- clean component design
+- scalable state management
+- readable folder structure
+- real-world frontend practices
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# Sheet" 
+## Key Features
+
+- Topic-wise organization of coding questions  
+- Expand / collapse topics to view related questions  
+- Difficulty badges for quick assessment  
+- Progress bar to visualize completion per topic  
+- Centralized state management using Zustand  
+- Fast development setup using Vite  
+
+---
+
+## Tech Stack
+
+**Frontend**
+- React.js
+- Vite
+- Tailwind CSS
+- Zustand (state management)
+
+**Data Handling**
+- Static JSON-based question dataset
+
+---
+
+## Project Structure
+QUESTION-SHEET
+│── node_modules/              # Installed dependencies
+│
+│── public/                    # Public assets
+│   ├── data/
+│   │   └── sheet.json         # Questions & topics data
+│   └── vite.svg
+│
+│── src/
+│   ├── api/
+│   │   └── sheetApi.js        # Data fetching logic
+│
+│   ├── assets/                # Images & icons
+│   │   ├── leetcode.png
+│   │   └── react.svg
+│
+│   ├── components/
+│   │   ├── ui/                # Reusable UI components
+│   │   │   ├── Badge.jsx
+│   │   │   ├── ProblemItem.jsx
+│   │   │   └── ProgressBar.jsx
+│   │   │
+│   │   ├── SectionCard.jsx    # Topic container card
+│   │   ├── QuestionCard.jsx   # Individual question card
+│   │   └── Topic.jsx          # Topic with dropdown
+│
+│   ├── store/
+│   │   └── useSheetStore.js   # Zustand global store
+│
+│   ├── api.js                 # API abstraction
+│   ├── App.jsx                # Root component
+│   ├── main.jsx               # App entry point
+│   ├── index.css              # Global styles
+│   └── App.css
+│
+│── .gitignore
+│── eslint.config.js
+│── index.html
+│── package.json
+│── package-lock.json
+│── postcss.config.js
+│── tailwind.config.js
+│── vite.config.js
+│── README.md
+
+
+---
+
+## Getting Started
+
+### Clone the Repository
+```bash
+git clone https://github.com/your-username/question-sheet.git
+cd question-sheet
+
+npm install
+npm run dev
+
+
+http://localhost:5173
