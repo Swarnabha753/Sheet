@@ -43,6 +43,7 @@ The project emphasizes:
 ---
 
 ## Project Structure
+```
 QUESTION-SHEET/
 │── node_modules/        # Project dependencies
 │── public/              # Public static files
@@ -80,7 +81,7 @@ QUESTION-SHEET/
 │── vite.config.js       # Vite configuration
 │── README.md            # Project documentation
 
-
+```
 ---
 
 ## Getting Started
