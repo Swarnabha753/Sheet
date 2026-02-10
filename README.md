@@ -43,42 +43,42 @@ The project emphasizes:
 ---
 
 ## Project Structure
-QUESTION-SHEET
-├── node_modules/
-├── public/
-│   ├── data/
+QUESTION-SHEET/
+│── node_modules/        # Project dependencies
+│── public/              # Public static files
+│   ├── data/            # Question data source
 │   │   └── sheet.json
 │   └── vite.svg
-├── src/
-│   ├── api/
+│── src/                 # Application source code
+│   ├── api/             # Data fetching logic
 │   │   └── sheetApi.js
-│   ├── assets/
+│   ├── assets/          # Images and icons
 │   │   ├── leetcode.png
 │   │   └── react.svg
-│   ├── components/
-│   │   ├── ui/
+│   ├── components/      # UI components
+│   │   ├── ui/           # Reusable UI elements
 │   │   │   ├── Badge.jsx
 │   │   │   ├── ProblemItem.jsx
 │   │   │   └── ProgressBar.jsx
 │   │   ├── SectionCard.jsx
 │   │   ├── QuestionCard.jsx
 │   │   └── Topic.jsx
-│   ├── store/
+│   ├── store/           # Global state management
 │   │   └── useSheetStore.js
-│   ├── api.js
-│   ├── App.jsx
-│   ├── App.css
-│   ├── index.css
-│   └── main.jsx
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package-lock.json
-├── package.json
-├── postcss.config.js
-├── README.md
-├── tailwind.config.js
-└── vite.config.js
+│   ├── api.js           # API abstraction layer
+│   ├── App.jsx          # Root component
+│   ├── App.css          # Component styles
+│   ├── index.css        # Global styles
+│   └── main.jsx         # Application entry point
+│── .gitignore           # Git ignored files
+│── eslint.config.js     # ESLint configuration
+│── index.html           # HTML entry file
+│── package.json         # Dependencies and scripts
+│── package-lock.json    # Dependency lock file
+│── postcss.config.js    # PostCSS configuration
+│── tailwind.config.js   # Tailwind CSS configuration
+│── vite.config.js       # Vite configuration
+│── README.md            # Project documentation
 
 
 ---
